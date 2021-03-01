@@ -1,0 +1,171 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Yeon+Sung&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Yeon Sung", cursive;
+}
+
+body {
+  background-color: #f0f8ff;
+}
+
+header {
+  margin: 15px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+.form-section form {
+  /* border: 1px solid black; */
+  width: 60%;
+  margin: auto;
+  display: flex;
+}
+
+#todo {
+  width: 70%;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+#todo:hover {
+  border-color: rgb(8, 144, 255);
+}
+
+#addButton {
+  width: 25%;
+  margin-left: 40px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgb(8, 144, 255);
+}
+
+#addButton:hover {
+  background-color: rgb(158, 224, 255);
+}
+
+.show-todo-btn-section{
+  width: 60%;
+  margin: auto;
+}
+
+.show-todo-btn{
+  background-color: rgb(180, 177, 177);
+  border-radius: 0.3rem;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  margin: 1rem 1rem 1rem 0;
+}
+
+/* .show-todo-btn:focus{
+  background-color: rgb(255 100 100);
+} */
+
+.active{
+  background-color: rgb(255 100 100);
+}
+
+.to-do-list {
+  margin-top: 20px;
+}
+
+.to-do-list p {
+  line-height: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border: 1px solid black;
+  width: 60%;
+  margin: 10px auto;
+  background-color: rgb(184, 240, 248);
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: width 500ms;
+}
+
+/* .completed {
+  background-color: rgb(146, 252, 152);
+} */
+
+.to-do-list p:hover {
+  text-decoration: line-through;
+  width: 62%;
+  background-color: rgb(216, 250, 255);
+}
+
+@media screen and (max-width: 850px) {
+  .form-section form {
+    width: 70%;
+  }
+
+  .to-do-list p {
+    width: 70%;
+  }
+
+  .show-todo-btn-section{
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .form-section form {
+    min-width: 80%;
+  }
+
+  .to-do-list p {
+    width: 80%;
+  }
+
+  .show-todo-btn-section{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .form-section form {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #todo {
+    width: 90%;
+    margin: auto;
+  }
+
+  #addButton {
+    width: 60%;
+    margin: 5px auto;
+  }
+
+  .to-do-list p {
+    width: 90%;
+  }
+
+  .show-todo-btn-section{
+    width: 100%;
+  }
+
+  .show-todo-btn{
+    display: block;
+    width: 60%;
+    margin: 0.3rem auto;
+  }
+}
